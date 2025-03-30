@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 git fetch --tag 2>/dev/null
-version = "$(git tag --sort=-v:refname | head -1 | sed 's/^v//')"
+version="$(git tag --sort=-v:refname | head -1 | sed 's/^v//')"
 
 IFS='.' read -ra tokens <<<"${version:-0.0.0}"
 major="${tokens[0]}"
