@@ -14,8 +14,6 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Change permissions for bump.sh
-        run: chmod +x .github/scripts/bump.sh
       - env:
           USERNAME: github-actions[bot]
           EMAIL: 48198282+github-actions[bot]@users.noreply.github.com
